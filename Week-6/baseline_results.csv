@@ -1,0 +1,30 @@
+﻿Question_ID,Question,Expected_Answer,LLM_Answer,Matched_Keywords,Missing_Keywords,Score,Status,Source,Model,Release
+Q001,What is tokenization in large language models?,Tokenization is the process of splitting input text into smaller units called tokens.,"Tokenization is a crucial step in the processing of large language models. It involves breaking down input text into individual units called tokens. Tokens can be words, subwords, or even characters, depending on the specific model and its architecture.
+
+In the context of large language models, tokenization is used to convert the input text into a format that the model can understand and process. Here's a breakdown of the tokenization process:
+
+1. **Wordpiece tokenization**: This is a common technique used in many large language models, including BERT and RoBERTa. It involves splitting words into subwords, also known as wordpieces. Wordpieces are smaller units that can be combined to form words. For example, the word ""unbreakable"" might be split into ""un-"" and ""-breakable"".
+2. **Character-level tokenization**: This involves breaking down the input text into individual characters. This is often used in models that require a high degree of granularity, such as in text classification or sentiment analysis tasks.
+3. **Subword tokenization**: This involves splitting words into subwords, which are smaller units that can be combined to form words. Subword tokenization is often used in models that require a high degree of flexibility, such as in machine translation or question answering tasks.
+
+The benefits of tokenization in large language models include:
+
+1. **Improved handling of out-of-vocabulary words**: Tokenization allows models to handle words that are not in their vocabulary by splitting them into subwords.
+2. **Increased flexibility**: Tokenization enables models to handle a wide range of input formats, including words, subwords, and characters.
+3. **Better handling of punctuation**: Tokenization allows models to handle punctuation marks as separate tokens, which can improve their performance on tasks that require attention to punctuation.
+
+However, tokenization also has some limitations and challenges, such as:
+
+1. **Increased computational complexity**: Tokenization can increase the computational complexity of the model, as it requires more processing power to break down the input text into individual tokens.
+2. **Loss of contextual information**: Tokenization can lead to a loss of contextual information, as the model may not be able to capture the relationships between tokens.
+
+Overall, tokenization is a critical step in the processing of large language models, as it enables them to handle a wide range of input formats and improve their performance on various tasks.","splitting, text, tokens",,100.0,PASS,https://huggingface.co/docs/transformers/en/tokenizer_summary,llama3.2,v0.1
+Q002,What is a token?,"A token is a unit of text such as a word, subword, character or punctuation mark processed by a language model.","A token can refer to different things depending on the context. Here are a few possible meanings:
+
+1. **Digital token**: In the context of blockchain, cryptocurrency, or digital wallets, a token is a digital asset that represents a unit of exchange or a specific value. Examples include cryptocurrencies like Ethereum or Bitcoin, as well as tokens used for specific purposes, such as gaming or social media.
+2. **Physical token**: A physical token is an object that represents a value, permission, or entitlement. Examples include coins, stamps, or loyalty cards.
+3. **Token of appreciation**: A token of appreciation is a gesture or gift given to someone to show gratitude or recognition. This can be a physical object, like a gift card or a small memento, or an intangible gesture, like a verbal compliment.
+4. **Token in language**: In linguistics, a token is a single unit of language, such as a word, phrase, or symbol, that is used to represent a concept or idea.
+5. **Token in software development**: In software development, a token is a small piece of data used to identify or authenticate something, such as a user, a resource, or a request.
+
+In general, a token is an object, concept, or unit that represents a value, permission, or entitlement, and is often used to facilitate exchange, authentication, or recognition.","unit, text, word",subword,75.0,PASS,https://huggingface.co/docs/transformers/en/tokenizer_summary,llama3.2,v0.1
